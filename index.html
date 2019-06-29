@@ -5,40 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Alisa Christian</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/module.css">
+    <link rel="stylesheet" href="assets/css/state.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <h1>Alisa Christian</h1>
-        <div>
-            <ul>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">Writing Samples</a></li>
-                <li><a href="#">Contact</a></li>
+        <div class="nav-div">
+            <ul class="navbar">
+                <li><a class="navbar-link" href="#" data-value="0vw">About</a></li>
+                <li><a class="navbar-link" href="#" data-value="-100vw">Writing</a></li>
+                <li><a class="navbar-link" href="#" data-value="-200vw">Contact</a></li>
             </ul>
         </div>
     </header>
     <main>
-        <div id="content-div" class="content content__hidden">
+        <div id="content-div" class="content">
             <div id="about-div" class="content--page">
-                <h3>About Me</h3>
-                <img src="assets/images/alisa.png" width="200px" alt="profile photo">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit massa enim nec dui nunc mattis enim. Donec ac odio tempor orci dapibus. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Ut consequat semper viverra nam. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Praesent elementum facilisis leo vel fringilla. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Leo in vitae turpis massa sed elementum tempus egestas sed. Aliquam nulla facilisi cras fermentum odio eu feugiat. Nisl rhoncus mattis rhoncus urna. Sagittis orci a scelerisque purus. Sit amet tellus cras adipiscing enim eu turpis egestas pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Eu non diam phasellus vestibulum.</p>
-                
-                <p>Mattis ullamcorper velit sed ullamcorper. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Id cursus metus aliquam eleifend mi in. Turpis in eu mi bibendum neque egestas congue quisque egestas. Sollicitudin ac orci phasellus egestas. Cursus sit amet dictum sit amet justo donec. Ut consequat semper viverra nam libero justo. Nulla aliquet porttitor lacus luctus. At elementum eu facilisis sed odio morbi quis commodo. Vel risus commodo viverra maecenas. Dolor purus non enim praesent elementum. Iaculis eu non diam phasellus. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum.</p>
+                <div class="card">
+                    <h3>About Me</h3>
+                    <img class="float-left" src="assets/images/alisa.png" width="250px" alt="profile photo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Blandit massa enim nec dui nunc mattis enim. Donec ac odio tempor orci dapibus. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Ut consequat semper viverra nam. Cras fermentum odio eu feugiat pretium nibh ipsum consequat nisl. Praesent elementum facilisis leo vel fringilla. Ipsum dolor sit amet consectetur adipiscing elit pellentesque. Leo in vitae turpis massa sed elementum tempus egestas sed. Aliquam nulla facilisi cras fermentum odio eu feugiat. Nisl rhoncus mattis rhoncus urna. Sagittis orci a scelerisque purus. Sit amet tellus cras adipiscing enim eu turpis egestas pretium. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Eu non diam phasellus vestibulum.</p>
+                    
+                    <p>Mattis ullamcorper velit sed ullamcorper. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Id cursus metus aliquam eleifend mi in. Turpis in eu mi bibendum neque egestas congue quisque egestas. Sollicitudin ac orci phasellus egestas. Cursus sit amet dictum sit amet justo donec. Ut consequat semper viverra nam libero justo. Nulla aliquet porttitor lacus luctus. At elementum eu facilisis sed odio morbi quis commodo. Vel risus commodo viverra maecenas. Dolor purus non enim praesent elementum. Iaculis eu non diam phasellus. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum.</p>
+                </div>
             </div>
             <div id="writing-div" class="content--page">
-                <h3>Writing Samples</h3>
-                <div id="writing-navigation"></div>
-                <div id="writing-bucket"></div>
+                <div id="writing-navigation">
+                    <h2></h2>
+                    <div class="card">
+                        <ul id="title-list"></ul>
+                    </div>
+                </div>
+                <div id="writing-bucket">
+                    <h2>Writing Samples</h2>
+                </div>
             </div>
             <div id="contact-div"class="content--page">
-                <h3>Contact Me</h3>
-                <input id="email" type="email" placeholder="Your Email Address...">
-                <input id="subject" type="text" placeholder="Subject...">
-                <input id="message" type="text" placeholder="Message...">
-                <button>Send</button>
+                <div class="card">
+                    <h3>Contact Me</h3>
+                    <input id="email" type="email" placeholder="Your Email Address...">
+                    <input id="subject" type="text" placeholder="Subject...">
+                    <textarea id="message" type="text" placeholder="Message..."></textarea>
+                    <button>Send</button>
+                </div>
             </div>
         </div>
     </main>
+
+    <script src="assets/javascript/logic.js"></script>
 </body>
 </html>

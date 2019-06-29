@@ -1,0 +1,53 @@
+.nav-div {
+    width: 500px;
+    max-width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-link {
+    color: #F2F2F2;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 100vw 100vw 100vw;
+    grid-template-areas: 
+        "about samples contact";
+    position: relative;
+    left: 0vw;
+    margin-top: 15px;
+}
+
+.float-left {
+    float: left;
+}
+
+#about-div {
+    grid-area: about;
+}
+
+#writing-div {
+    grid-area: samples;
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    grid-template-areas: "navigation bucket";
+}
+
+#writing-navigation {
+    grid-area: navigation;
+}
+
+#writing-bucket {
+    grid-area: bucket;
+}
+
+#contact-div {
+    grid-area: contact;
+}

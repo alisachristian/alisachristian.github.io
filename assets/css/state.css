@@ -1,0 +1,11 @@
+a:hover {
+    color: #0D0D0D;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    background-color: #0D0D0D;
+}
