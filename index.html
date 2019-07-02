@@ -15,6 +15,13 @@
     <link rel="stylesheet" href="assets/css/state.css">
 
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_Jrz5ALrMfbyQUj0cjnFVa");
+        })();
+    </script>
 </head>
 <body>
     <header>
@@ -41,7 +48,7 @@
             <div id="writing-div" class="content--page">
                 <div id="writing-navigation">
                     <h2></h2>
-                    <div class="card">
+                    <div id="writing-nav-card" class="card">
                         <ul id="title-list"></ul>
                     </div>
                 </div>
@@ -52,10 +59,11 @@
             <div id="contact-div"class="content--page">
                 <div class="card">
                     <h3>Contact Me</h3>
+                    <input id="name" type="text" placeholder="Your Name...">
                     <input id="email" type="email" placeholder="Your Email Address...">
                     <input id="subject" type="text" placeholder="Subject...">
                     <textarea id="message" type="text" placeholder="Message..."></textarea>
-                    <button>Send</button>
+                    <button id="send-button">Send</button>
                 </div>
             </div>
         </div>

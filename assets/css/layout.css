@@ -51,3 +51,11 @@
 #contact-div {
     grid-area: contact;
 }
+
+#writing-nav-card {
+    max-height: 50%;
+    overflow: scroll;
+    position: fixed;
+    width: 18vw;
+    margin-left: 15px;
+}

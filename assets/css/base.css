@@ -93,3 +93,7 @@ button {
     background-color: #327373;
     border-radius: 15px;
 }
+
+li {
+    line-height: 1.5;
+}
